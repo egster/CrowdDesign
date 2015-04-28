@@ -6,6 +6,9 @@ using System.Threading.Tasks;
 
 namespace CrowdDesign.Core.Entities
 {
+    /// <summary>
+    /// This is a user
+    /// </summary>
     public class User
     {
         #region Properties
