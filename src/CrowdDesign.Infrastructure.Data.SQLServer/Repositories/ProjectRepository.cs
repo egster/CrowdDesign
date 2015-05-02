@@ -17,6 +17,7 @@ namespace CrowdDesign.Infrastructure.SQLServer.Repositories
             using (var db = new DatabaseContext())
             {
                 // Avoids lazy evaluation issues after the DbContext is disposed by forcing data to be retrieved with IEnumerable.ToList()
+                // test
                 projects = db.Projects
                                 .Include(e => e.Dimensions.Select(u => u.Sketches))
                                 .ToList();
